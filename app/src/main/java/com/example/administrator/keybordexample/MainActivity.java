@@ -217,20 +217,28 @@ public class MainActivity extends AppCompatActivity {
 
     private void setText(String press) {
         if((e1.getText().toString()).equals("")) {
-            e1.setText(press);
             e1.requestFocus();
+            e1.setText(press);
+            e2.requestFocus();
+
         }
         else if((e2.getText().toString()).equals("")) {
-            e2.setText(press);
             e2.requestFocus();
-        }
-        else if((e3.getText().toString()).equals(""))
-        {e3.setText(press);
+            e2.setText(press);
             e3.requestFocus();
+
+        }
+        else if((e3.getText().toString()).equals("")) {
+            e3.requestFocus();
+            e3.setText(press);
+            e4.requestFocus();
+
         }
         else if((e4.getText().toString()).equals("")) {
-            e4.setText(press);
             e4.requestFocus();
+            e4.setText(press);
+
+
         }
     }
     public void clear()
